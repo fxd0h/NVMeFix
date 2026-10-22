@@ -95,6 +95,16 @@ static constexpr struct pci_device_id nvme_id_table[] = {
 		NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
 	{ 0x1c58, 0x0023,   /* WDC SN200 adapter */
 		NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
+	{ 0x15b7, 0x5006,   /* WDC SN750 2TB */
+		NVME_QUIRK_NO_DEEPEST_PS |
+				NVME_QUIRK_SIMPLE_SUSPEND |
+				NVME_QUIRK_NO_APST |
+				NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
+	{ 0x15b7, 0x501e,   /* WDC SN750 SE 1TB */
+		NVME_QUIRK_NO_DEEPEST_PS |
+				NVME_QUIRK_SIMPLE_SUSPEND |
+				NVME_QUIRK_NO_APST |
+				NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
 	{ 0x1c5f, 0x0540,   /* Memblaze Pblaze4 adapter */
 		NVME_QUIRK_DELAY_BEFORE_CHK_RDY, },
 	{ 0x144d, 0xa821,   /* Samsung PM1725 */

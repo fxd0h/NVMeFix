@@ -109,6 +109,11 @@ enum nvme_quirks : unsigned long long {
 	 * Prevent tag overlap between queues
 	 */
 	NVME_QUIRK_SHARED_TAGS                  = (1 << 13),
+
+	/*
+	 * Disable SMART functionality
+	 */
+	NVME_QUIRK_DISABLE_SMART                = (1 << 14),
 };
 
 template <typename T>
